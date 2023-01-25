@@ -24,18 +24,18 @@ while(True):
         # This section contains main mechanic.
     if(playerChoice == "ROCK" and gameChoice == "SCISSOR"):
         print("You won! the choice was", gameChoice, "\n")
-        scorePlayer = scorePlayer + 1
+        scorePlayer += 1
     elif(playerChoice == "PAPER" and gameChoice == "ROCK"):
         print("You won! the choice was", gameChoice, "\n")
-        scorePlayer = scorePlayer + 1
+        scorePlayer += 1
     elif(playerChoice == "SCISSOR" and gameChoice == "PAPER"):
         print("You won! the choice was", gameChoice, "\n")
-        scorePlayer = scorePlayer + 1
+        scorePlayer += 1
     elif(playerChoice == gameChoice):
         print("draw!")
     else:
         print("You lose, the choice was", gameChoice, "\n")
-        scoreGame = scoreGame + 1
+        scoreGame += 1
     # This section contains main mechanic.
 
     print("Player:", scorePlayer, "Program:", scoreGame)
